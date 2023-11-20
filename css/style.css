@@ -1,0 +1,73 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.h1 h2 p{
+	margin: 0;
+	padding: 0;
+}
+.clock{
+	background-image: url(../images/clock1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	animation: clock 20s linear infinite;
+	min-height: 80vh;
+	margin-bottom: 5rem;
+	border: 10px solid #A3B763;
+  }
+  @keyframes clock{
+	0%{
+	  background-image: url(../images/clock2.png);
+	}
+	20%{
+	  background-image: url(../images/clock3.png);
+	}
+	25%{
+	  background-image: url(../images/clock4.png);
+	}
+	45%{
+	  background-image: url(../images/clock5.png);
+	}
+  }
+  .typewriter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #A3B763;
+    font-weight: bold;
+    position: relative;
+    margin: 0;
+    top: 50%;
+	left: 25%;
+	padding-top: 40px;
+	padding-bottom: 30px;
+    transform: translateY(-50% -50%);
+}
+
+.typewriter span {
+    color: var(--text-color);
+    text-transform: uppercase;
+	color: #860A35;
+    padding: 10px;
+    border-right: solid var(--text-color) 10px; 
+    animation: cursor 1s ease-in-out infinite;
+}
+
+@keyframes cursor {
+    from { border-color: var(--text-color); }
+    to { border-color: transparent; }
+}
+.digi-clock{
+	background-color: #A3B763;
+	height: 200px;
+	margin-top: 150px;
+	border-radius: 10px;
+}
+#currentTime{
+	font-size: 5em;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #860A35;
+    margin: 50px auto;
+}
